@@ -1,0 +1,282 @@
+<!--
+-   Author: Matthew Stephen Wojno   Date: 7/8/2016  Text Editor: Brackets
+-
+-   This is a basic template for a singular webpage. Bootstrap plugins are utilized throughout the 
+-   the webpage to provide structure. In addition, some javascript is implemented with an accordion
+-   widget. 
+-   
+-   Some possible issues to work on are cleaning up the accordion style a little bit, such as under the 
+-   fourth list item there is a protruding box. Also, some trouble with the default values of a:link
+-   as well as a:hover. A final thing to perfect is compatability between various sizes of devices. 
+-
+-
+-->
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      
+  </head>
+    
+  <body class="container-fluid">
+      
+      <!--ROW 1-->
+      <div class="row1">
+          <div class="col-md-3"><img src="http://placehold.it/218x103"></div>
+          
+          <div class="col-md-9 column col-md-push-1">
+                    
+                <ul class="navbar">
+      
+                    <!-- Have to include the active state in each of the html files of the list-->
+                    <li><a href="index.html" class="active">HOME</a></li>
+      
+                    <li><a href="#">ABOUT US</a></li>
+      
+                    <li><a href="#">PROGRAMS</a></li> 
+      
+                    <li><a href="#">NEWS</a></li> 
+                    
+                    <li><a href="#">BLOG</a></li> 
+                    
+                    <li><a href="#">CONTACT US</a></li> 
+    
+                </ul>
+              
+          </div>
+          
+      </div> <!--End of Row1-->
+      
+      <!--ROW 2-->
+      <div class="row2">
+          <div class="col-md-12"><hr/></div>
+      </div><!--End of Row 2-->
+      
+      <!--ROW 3-->
+      <div class="row3">
+          <div class="col-md-12"><img src="http://placehold.it/960x380"></div>
+      </div><!--End of Row 3-->
+      
+      <!--ROW 4-->
+      <div class="row4">
+          <div class="col-md-12"><hr/></div>
+      </div><!--End of Row 4-->
+      
+      <!--ROW 5-->
+      <div class="row5">
+          <div class="col-md-4">
+              
+              <div class="header1">
+              <header class="head"> HEADER 1</header>
+              </div>
+              
+              <hr style="height:5px;border:none;color:#333;background-color:#333;" />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet libero orci, nec laoreet diam rhoncus ac. Donec bibendum tortor a ante vehicula, sed dictum odio viverra. Morbi et dignissim ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <a href="index.html" style="color:#FE9B00">Read More</a></p>
+          </div>
+          
+          <div class="col-md-4">
+              
+              <div class="header1">
+              <header class="head"> HEADER 1</header>
+              </div>
+              
+              <hr style="height:5px;border:none;color:#333;background-color:#333;" />
+              <p>January 1, 2014-<a href="index.html" style="color:#FE9B00">Lorem ipsum dolor sit amet, consectetur adipiscing ellit</a></p>
+              <p>January 2, 2014-<a href="index.html" style="color:#FE9B00">Sed vitae lectus id sem lobortis scelerique. Praesent eget consequat.</a></p>
+          </div>
+          
+          <div class="col-md-4">
+              
+              <div class="header1">
+              <header class="head"> HEADER 1</header>
+              </div>
+              
+              <hr style="height:5px;border:none;color:#333;background-color:#333;" />
+              
+              <!-- Expand/Collapse Widget Code-->
+              <div class="container">
+                  <div class="accordion">
+                      <dl>
+                          
+                          <dt>
+                              <a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+                                  
+                                  List Item 1</a>
+                          </dt>
+                          
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                              
+                              <header class="acc_header">Title Text</header>
+                              <p class="text">This is dummy text. It is intended to be read but have no meaning.</p>
+                              
+                              <header class="acc_header">Title Text</header>
+                              <p class="text">As a simulation of actual copy, using ordinary words with normal leter frequencies, it cannot deceive eye or brain.</p>
+                              
+                          </dd>
+                          
+                          <dt>
+                              <a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+                                  
+                                  List Item 2</a>
+                          </dt>
+                          
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+                               <header class="acc_header">Title Text</header>
+                              <p class="text">This is dummy text. It is intended to be read but have no meaning.</p>
+                              
+                              <header class="acc_header">Title Text</header>
+                              <p class="text">As a simulation of actual copy, using ordinary words with normal leter frequencies, it cannot deceive eye or brain.</p>
+                              
+                          </dd>
+                          
+                          <dt>
+                              <a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+                                  
+                                  List Item 3</a>
+                          </dt>
+                          
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+                              
+                               <header class="acc_header">Title Text</header>
+                              <p class="text">This is dummy text. It is intended to be read but have no meaning.</p>
+                              
+                              <header class="acc_header">Title Text</header>
+                              <p class="text">As a simulation of actual copy, using ordinary words with normal leter frequencies, it cannot deceive eye or brain.</p>
+                              
+                          </dd>
+                          
+                          <dt>
+                              <a href="#accordion4" aria-expanded="false" aria-controls="accordion4" class="accordion-title accordionTitle js-accordionTrigger">
+                                  
+                                  List Item 4</a>
+                          </dt>
+                          
+                          <dd class="accordion-content accordionItem is-collapsed" id="accordion4" aria-hidden="true">
+                              
+                               <header class="acc_header">Title Text</header>
+                              <p class="text">This is dummy text. It is intended to be read but have no meaning.</p>
+                              
+                              <header class="acc_header">Title Text</header>
+                              <p class="text">As a simulation of actual copy, using ordinary words with normal leter frequencies, it cannot deceive eye or brain.</p>
+                              
+                          </dd>
+                      </dl>
+                  </div>
+              </div>
+               <script src="js/index.js"></script>
+              <!-----------End of Widgets Code--------------->
+              
+          </div>
+      </div><!--End of Row 5-->
+      
+      <!--ROW 6-->
+      <div class="row6">
+          <div class="col-md-12">
+              
+              <hr>
+              
+               <div class="header1">
+              <header class="head"> HEADER 1</header>
+              </div>
+              
+              <hr style="height:5px;border:none;color:#333;background-color:#333;" />
+              
+          </div>
+      </div><!--End of Row 6-->
+      
+      <!--ROW 7-->
+      <div class="row7">
+          <div class="col-md-3 image_pos">
+              <img src="http://placehold.it/215x135"/>
+               <div class="anchor_pos"><a href="#" class="anchor">VIEW</a></div>
+          </div>
+          
+          <div class="col-md-3 image_pos">
+              <img src="http://placehold.it/215x135"/>
+               <div class="anchor_pos"><a href="#" class="anchor">VIEW</a></div>
+          </div>
+          
+          <div class="col-md-3 image_pos">
+              <img src="http://placehold.it/215x135"/>
+               <div class="anchor_pos"><a href="#" class="anchor">VIEW</a></div>
+          </div>
+          
+          <div class="col-md-3 image_pos">
+              <img src="http://placehold.it/215x135"/>
+               <div class="anchor_pos"><a href="#" class="anchor">VIEW</a></div>
+          </div>
+          
+      </div><!--End of Row 7-->
+      
+       <!--ROW 8-->
+      <div class="row8">
+          <div class="col-md-12"><hr></div>
+      </div><!--End of Row 8-->
+      
+       <!--ROW 9-->
+      <div class="row9">
+          <div class="col-md-12 expand">
+              <div class="col-md-9">
+                  <header class="head2">HEADER 2</header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet libero orci, nec laoreet diam rhoncus ac. Donec bibendum tortor a ante vehicula, sed dictum odio viverra. Morbi et dignissim ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <a href="index.html" style="color:#FE9B00"> Read more</a></p>            
+              </div>
+
+              <div class="col-md-3">
+                  <header class="head2">HEADER 2</header>
+                  
+                  <div class="soc_med_pics">
+                      <div class="col-md-3"><img src="tweet.gif"></div>
+                      <div class="col-md-3"><img src="facebook.gif"></div>
+                      <div class="col-md-3"><img src="flick.gif"></div>
+                      <div class="col-md-3"><img src="rss.gif"></div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div><!--End of Row 9-->
+      
+    </body>
+    
+    <!--Footer-->
+    <div class="container-fluid">
+        
+        <div class="row color">
+            <div class="col-md-10 color">
+                
+                <ul class="navbar1">
+      
+                    <li><a href="index.html">HOME</a></li>
+      
+                    <li><a href="#">ABOUT US</a></li>
+      
+                    <li><a href="#">PROGRAMS</a></li> 
+      
+                    <li><a href="#">NEWS</a></li> 
+                    
+                    <li><a href="#">BLOG</a></li> 
+                    
+                    <li><a href="#">CONTACT US</a></li> 
+    
+                </ul>
+                
+                <div class="copy_right">
+                <p class="text color">@2013 Lorum Ipsum, Inc.</p>
+                </div>
+                
+            </div>
+            
+            <div class = "col-md-2 color pos"><img src="http://placehold.it/120x64"/></div>
+            
+            
+        </div>
+    </div><!--End of Footer-->
+    
+</html>
